@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/okidd-frontend/',
+  base: '/claude-git-test/',
 })

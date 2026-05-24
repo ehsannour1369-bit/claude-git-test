@@ -67,7 +67,7 @@ function StudentLayout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <BrowserRouter basename="/okidd-frontend">
+    <BrowserRouter basename="/claude-git-test">
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />

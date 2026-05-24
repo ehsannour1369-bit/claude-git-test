@@ -16,7 +16,7 @@ client.interceptors.response.use(
     if (err.response?.status === 401) {
       localStorage.removeItem('token')
       localStorage.removeItem('user')
-      window.location.href = '/okidd-frontend/login'
+      window.location.href = '/claude-git-test/login'
     }
     return Promise.reject(err)
   }
