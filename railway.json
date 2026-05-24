@@ -4,7 +4,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "preDeployCommand": "npx prisma migrate resolve --rolled-back 0_init && npx prisma migrate deploy && npx ts-node prisma/seed.ts",
+    "preDeployCommand": "npx prisma migrate resolve --applied 0_init && npx ts-node prisma/seed.ts",
     "startCommand": "npm run build && node dist/index.js",
     "healthcheckPath": "/api/health",
     "healthcheckTimeout": 60,
